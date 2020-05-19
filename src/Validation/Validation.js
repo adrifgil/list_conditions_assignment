@@ -1,10 +1,14 @@
 import React from 'react';
-import './Validation.css';
+// import './Validation.css';
 
-const validation = () => (props) => {
+const validation = (props) => {
     return (
       <div>
-        <p></p>
+        {
+          props.inputLenght > 5 ?
+            <p>Text Long Enough!</p> :
+            <p>Text too Short!</p>
+        }
       </div>  
     );
 };
