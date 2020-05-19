@@ -31,7 +31,7 @@ class App extends Component {
           value={this.state.userInput} />
         <p>{this.state.userInput}</p>
         <Validation 
-          inputLenght={this.state.userInput.length}/>
+        inputLength={this.state.userInput.length}/>
       </div>
     );
   }
